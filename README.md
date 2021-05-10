@@ -46,8 +46,8 @@ I really had a lot of fun playing around with the Grid Template and I'm looking 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Anca Dragan](https://github.com/AncaDragan310)
+- Frontend - [@AncaDragan310](https://www.frontendmentor.io/profile/AncaDragan310)
 
 
 
