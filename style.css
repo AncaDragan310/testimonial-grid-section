@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500, 600;
+}
+
+body {
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "text1 text1 text2 text5"
+        "text3 text4 text4 text5";
+    grid-gap: 1em;
+    margin: 10%;
+}
+
+.text1 {
+    grid-area: text1;
+}
+.text2 {
+    grid-area: text2;
+}
+.text3 {
+    grid-area: text3;
+}
+.text4 {
+    grid-area: text4;
+}
+.text5 {
+    grid-area: text5;
+}
+
+.testimonial {
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+}
+
+.testimonial .name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.testimonial .name p {
+    font-size: 16px;
+}
+
+.testimonial .name span {
+    opacity: .5;
+}
+
+.testimonial .name img {
+    border-radius: 50px;
+    border: 3px solid rgba(255, 255, 255, .5);
+    height: 40px;
+}
+
+.testimonial .text {
+    z-index: 1;
+    position: relative;
+}
+
+.testimonial .text h2 {
+  font-size: 1.2rem;
+}
+
+.testimonial .text p {
+    opacity: .7;
+}
+
+.testimonial .quote {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    z-index: 0;
+}
+
+.bg-1 {
+    background-color: hsl(263, 55%, 52%);
+}
+
+.bg-2 {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.bg-3 {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.bg-4 {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+@media screen and (max-width: 1050px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr .5fr;
+        grid-template-areas: 
+            "text1 text1 text2"
+            "text3 text4 text4"
+            "text5 text5 text5";
+        grid-gap: 1em;
+        margin: 5%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .5fr .5fr 1fr 1fr;
+        grid-template-areas: 
+            "text1"
+            "text2"
+            "text3" 
+            "text4"
+            "text5";
+        grid-gap: 1em;
+        margin: 5%;
+    }
+}
